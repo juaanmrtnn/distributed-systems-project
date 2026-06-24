@@ -41,9 +41,20 @@ You need a C compiler that supports OpenMP (like 'gcc') and an MPI implementatio
   ```
 
   ### Usage
-  To run the program in a distributed environment, use mpirun specifying the number of processes with the -np flag.
+  The program expects 4 arguments via the command line to execute properly.
   ```bash
-  mpirun -np 4 ./code
+  mpirun -np nP ./code <K> <file> <nP> <nH>
+  ```
+  #### Arguments Description
+  * K: Number of nearest neighbors (k-NN) to use for the prediction. Determines the number of similar historical days considered.
+  * file: Path to the input dataset containing the time series data.
+  * nP: Number of processes
+  * nH: Number of threads
+ 
+  #### Execution Example
+  To run the algorithm evaluating the 5 nearest neighbors, reading from time.txt, using 4 processes and 2 threads per process:
+  ```bash
+  mpirun -np 4 ./code 5 time.txt 4 2
   ```
   
   
