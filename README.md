@@ -28,6 +28,23 @@ You need a C compiler that supports OpenMP (like 'gcc') and an MPI implementatio
   ```bash
   sudo apt-get install openmpi-bin openmpi-doc libopenmpi-dev
   ```
+
+  ### Compilation
+  1. Clone the repo
+  ```bash
+  git clone
+  ```
+
+  2. Compile the source code using mpicc, including -fopenmp for OpenMP and -lm to link the math.h library
+  ```bash
+  mpicc -fopenmp code.c -o code -lm
+  ```
+
+  ### Usage
+  To run the program in a distributed environment, use mpirun specifying the number of processes with the -np flag.
+  ```bash
+  mpirun -np 4 ./code
+  ```
   
   
   
