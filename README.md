@@ -1,5 +1,4 @@
-
-## Time Series Prediction Algorithm Using Hybrid Computing
+# Time Series Prediction Algorithm Using Hybrid Computing
 
 ![Status](https://img.shields.io/badge/status-completed-success?style=for-the-badge)
 
@@ -9,12 +8,14 @@ Group project developed for the Distributed Systems course at Pablo de Olavide U
 
 ## Built With
 
-This project was developed using C an hybrid parallel programming standards as OpenMP and MPI
+This project was developed using C and hybrid parallel programming standards as OpenMP and MPI
 
-* <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
-* <img src="https://img.shields.io/badge/MPI-000000?style=for-the-badge&logoColor=white" alt="MPI" />
-* <img src="https://img.shields.io/badge/OpenMP-314CB6?style=for-the-badge&logoColor=white" alt="OpenMP" />
-* <img src="https://img.shields.io/badge/math.h-555555?style=for-the-badge" alt="math.h" />
+<p align="left">
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
+  <img src="https://img.shields.io/badge/MPI-000000?style=for-the-badge&logoColor=white" alt="MPI" />
+  <img src="https://img.shields.io/badge/OpenMP-314CB6?style=for-the-badge&logoColor=white" alt="OpenMP" />
+  <img src="https://img.shields.io/badge/math.h-555555?style=for-the-badge" alt="math.h" />
+</p>
 
 ## Getting Started
 
@@ -32,7 +33,7 @@ You need a C compiler that supports OpenMP (like 'gcc') and an MPI implementatio
   ### Compilation
   1. Clone the repo
   ```bash
-  git clone
+  git clone [https://github.com/juaanmrtnn/distributed-systems-project.git](https://github.com/juaanmrtnn/distributed-systems-project.git)
   ```
 
   2. Compile the source code using mpicc, including -fopenmp for OpenMP and -lm to link the math.h library
