@@ -47,14 +47,14 @@ You need a C compiler that supports OpenMP (like 'gcc') and an MPI implementatio
   ```
   #### Arguments Description
   * K: Number of nearest neighbors (k-NN) to use for the prediction. Determines the number of similar historical days considered.
-  * file: Path to the input dataset containing the time series data.
+  * file: Path to the input dataset containing the time series data. You can use datos_1X.txt (contains 3341 data rows) or datos_10X.txt (contains 33410 data rows)
   * nP: Number of processes
   * nH: Number of threads
  
   #### Execution Example
-  To run the algorithm evaluating the 5 nearest neighbors, reading from time.txt, using 4 processes and 2 threads per process:
+  To run the algorithm evaluating the 5 nearest neighbors, reading from datos_1X.txt, using 4 processes and 2 threads per process:
   ```bash
-  mpirun -np 4 ./code 5 time.txt 4 2
+  mpirun -np 4 ./code 5 datos_1X.txt 4 2
   ```
   
   
